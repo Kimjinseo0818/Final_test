@@ -56,7 +56,7 @@
     </div>
 </nav>
 <h1>Add New Info</h1>
-<form action="addok" method="post" enctype="multipart/form-data">
+<form action="addok" method="post">
     <table id="edit">
         <tr><td>제목</td><td><input type="text" name="title"/></td></tr>
         <tr><td>영화사</td><td><input type="text" name="studio"/></td></tr>
@@ -67,7 +67,6 @@
         <tr><td>장르</td><td><input type="text" name="genre"/></td></tr>
         <tr><td>권장연령</td><td><input type="number" name="recommendAge"/></td></tr>
         <tr><td>줄거리</td><td><textarea cols="50" rows="5" name="summary"></textarea></td></tr>
-        <tr><td>포스터</td><td><input type="file" name="photo"/> </td></tr>
         <tr><td colspan="2"><a href="list">View All Records</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <input type="submit" value="Add Post"/></td> </tr>
     </table>

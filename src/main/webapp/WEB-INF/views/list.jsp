@@ -103,10 +103,10 @@
             height: 450px;
             border: 5px solid gray;
             border-radius: 5%;
-            background-color: white;
+            background-color: lightgray;
         }
         #block_img{
-            background-color: white;
+            background-color: lightgray;
             height: 200px;
             margin-top: 50px;
             margin-bottom: 50px;
@@ -188,7 +188,7 @@
     <div style="width:100%; display: grid; place-items: center; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); grid-gap: 10px;">
 <c:forEach items="${list}" var="u">
 <div id="block">
-    <div id="block_img"><img src="./img/${u.photo}" width="200" class="photo">
+    <div id="block_img"><img src="../img/movie.png" width="200" class="photo">
     </div>
     <div id="block_text">
         <h4>제목: ${u.title}</h4>

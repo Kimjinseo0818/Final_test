@@ -69,7 +69,6 @@
 		<tr><td>장르:</td><td><form:input path="genre"/></td></tr>
 		<tr><td>권장연령:</td><td><form:input path="recommendAge"/></td></tr>
 		<tr><td>줄거리:</td><td><form:textarea cols="50" rows="5" path="summary"/></td></tr>
-		<tr><td>포스터:</td><td><form:input path="photo"/> </td></tr>
 		<tr><td></td><td id="is"><input type="submit" value="Edit Post"/> &nbsp; <input type="button" value="Cancel" onclick="history.back()"/></td></tr>
 	</table>
 </form:form>
