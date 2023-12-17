@@ -9,21 +9,52 @@
 <meta charset="UTF-8">
 <title>Edit Form</title>
 	<style>
-		#edit {
-			border-collapse: collapse;
-		}
-		#edit td {
-			border: 1px solid #ddd;
-			padding: 8px;
-		}
-		#edit td:nth-child(odd) {
-			padding-top: 12px;
-			padding-bottom: 12px;
-			text-align: center;
-			color: white;
-			background-color: #006bb3;
+		body {
+			font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+			background-color: #f4f4f4;
+			margin: 0;
+			padding: 0;
 		}
 
+		h1 {
+			color: #333;
+			text-align: center;
+			margin-top: 20px;
+		}
+
+		form {
+			margin: 0 auto;
+			width: 60%;
+			background-color: #fff;
+			padding: 20px;
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+
+		input[type="text"],
+		textarea {
+			width: calc(100% - 20px);
+			padding: 8px;
+			margin-bottom: 10px;
+			border: 1px solid #ccc;
+			border-radius: 3px;
+			box-sizing: border-box;
+		}
+
+		input[type="submit"],
+		input[type="button"] {
+			background-color: #006bb3;
+			color: #fff;
+			border: none;
+			padding: 10px 20px;
+			border-radius: 3px;
+			cursor: pointer;
+		}
+
+		input[type="submit"]:hover,
+		input[type="button"]:hover {
+			background-color: #005082;
+		}
 	</style>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
@@ -56,7 +87,7 @@
 		</div>
 	</div>
 </nav>
-<h1>Edit Form</h1>
+<h1>Edit Movie</h1>
 <form:form modelAttribute="boardVO" method="POST" action="../editok">
 	<form:hidden path="seq"/>
 	<table id="edit">

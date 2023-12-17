@@ -7,20 +7,79 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
     <style>
-        #edit {
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        form {
+            margin: 0 auto;
+            width: 60%;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type="text"],
+        input[type="number"],
+        textarea,
+        input[type="file"] {
+            width: calc(100% - 16px); /* 브라우저 기본 패딩 보정 */
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #006bb3;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #005082;
+        }
+
+        table {
+            width: 100%;
             border-collapse: collapse;
         }
-        #edit td {
+
+        table td, table th {
             border: 1px solid #ddd;
             padding: 8px;
+            text-align: center;
         }
-        #edit td:nth-child(odd){
+
+        table tr:nth-child(even){
+            background-color: #f2f2f2;
+        }
+
+        table tr:hover {
+            background-color: #ddd;
+        }
+
+        table th {
             padding-top: 12px;
             padding-bottom: 12px;
             text-align: center;
-            color: white;
             background-color: #006bb3;
+            color: white;
         }
+
         a {
             color: white;
         }
@@ -55,7 +114,7 @@
         </div>
     </div>
 </nav>
-<h1>Add New Info</h1>
+<h1>Add New Movie</h1>
 <form action="addok" method="post">
     <table id="edit">
         <tr><td>제목</td><td><input type="text" name="title"/></td></tr>
@@ -67,7 +126,7 @@
         <tr><td>장르</td><td><input type="text" name="genre"/></td></tr>
         <tr><td>권장연령</td><td><input type="number" name="recommendAge"/></td></tr>
         <tr><td>줄거리</td><td><textarea cols="50" rows="5" name="summary"></textarea></td></tr>
-        <tr><td colspan="2"><a href="list">View All Records</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <tr><td colspan="2"><a style="text-decoration: none" href="list">Back to List</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <input type="submit" value="Add Post"/></td> </tr>
     </table>
 </form>
